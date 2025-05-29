@@ -21,7 +21,8 @@ pipeline {
 
         stage('Deploy WAR') {
             steps {
-                sh 'sudo cp target/MymavenWebApp01.war /opt/tomcat/webapps/'
+                sh 'sudo /bin/cp target/MymavenWebApp01.war /opt/tomcat/webapps/'
+'
             }
         }
 
